@@ -1,10 +1,15 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 class HelloWorld extends React.Component {
+
+  
   render() {
     return (
       <div>
-        <h1>Hello World</h1>
+        <button onClick={this.props.filterByGrease}>Filter by Greasedness :P</button>
+        <button onClick={this.props.sortByName}>Sort by Name :D</button>
+        <button onClick={this.props.sortByWeight}>Sort by Weight :O</button>
+        <br></br>
       </div>
     );
   }
